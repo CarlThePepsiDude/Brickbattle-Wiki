@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> 
+    <title>Brickbattle wiki</title>
+</head>
+<style>
+    body{
+        background-image: url(../Maps/Outpost\ Demorack.webp);
+    }
+</style>
+<body>
+    
+    
+       <div class="topnav">
+        <a href="../index.html"> Home </a>
+        <a class="active" href="../Brickbattlers.html"> Brickbattlers </a>
+        <a href="../Places.html"> Places </a>
+        <a href="../Groups.html"> Groups </a>
+        <a href="../Events.html"> Events </a>
+        <a href="../Miscellaneous.html"> Miscellaneous </a>
+        <a href="../News.html"> News </a>
+        <a href="../Aboutthis.html"> About this </a>
+        <a href="../Credits.html"> Credits </a>
+    </div>
+    
+    
+    <div class="container main-grey">
+    
+        <div class="flex-box">
+            <div class="column-left">
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p>Koke15</p>
+                </div>
+
+                <div class="body bodycolorpurple">
+                    <div class="CharacterPicture purpleborder">
+                        <img src="../Brickbattlers/KokeNew.webp" class="Character-large" width="300px">
+                    </div>
+                   <p>
+                    <b>AKA:</b> Calibri11, PYRO, Heka. <br>
+                    <b>JOINED:</b> September 29th, 2010.<br>
+                    <b>OCCUPATIONS:</b>
+                    <ul>
+                        <li>Leader of Temple Of Brickbattle</li>
+                        <li>Game Developer</li>
+                    </ul>
+                    <b>RANK:</b> Harbinger. <br>
+                    <b>STATUS:</b> <span style="color: rgb(2, 234, 2);"> ACTIVE</span>
+                    
+                    </p>
+                </div>
+
+                <div class="header">
+                    <p> TRIVIA </p>
+                </div>
+
+                <div class="body bodycolorpurple">
+                    <li>
+                        Koke was the only ranktester on TOB until 2019.
+                    </li>
+
+                    <br>
+
+                    <li>
+                        Koke haves an alt account called PYRO, which currently
+                        haves the Legend rank.
+                    </li>
+
+                </div>
+
+
+            </div>
+            </div>
+
+            <div class="column-right">
+            <div class="Card BlackCard">
+
+
+                <div class="brickbattlerphrases BBpurple">
+                    <p><i>"Defy the legends"</i></p>
+                    <p><b>- Koke's Profile Description</b></p>
+                </div>
+                <div class="header">
+                    <p> DESCRIPTION </p>
+                </div>
+
+                <div class="body bodycolorpurple">
+                    Koke15 is a Mexican oldgen brickbattler, he's current leader of the "Temple Of
+                    Brickbattle" group, he is known for his projects, works and his tournaments,
+                    He is seen as a nice guy between the community. <br>
+
+                    Koke is known for his tournaments, the most known is "Black Flame", an on-going
+                    brickbattle tournament series that occurs every year, however, Brickbattlers waited
+                    3 years for the sixth Black Flame to happen until Koke finally announced it on Mid-2024. <br>
+
+                    He is currently working on updates for Doomspire Brickbattle and more events for T.O.B.
+                </div>
+            </div>
+
+         
+            
+
+
+
+
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p> JOURNEY </p>
+                </div>
+
+                <div class="body bodycolorpurple">
+                    <p> Koke began brickbattling in the winter of 2010.
+                        His begginings involved the goal of joining Prymed,
+                        the main hub at the time, however, he got rejected
+                        a few times due to being a newbie until he achieved
+                        the needed skill to join, later, he was also welcomed
+                        into Brick Kings. <br>
+
+                        <br>
+                        Eventually, the demise of Brick Kings made Koke to go 
+                        inactive, returning in 2016 where a lack of brickbattlers 
+                        was noticeable, creating "Order Of Brickbattle". 
+                        In late 2017, He assisted in the creation of 
+                        "Temple Of Brickbattle", becoming a rankmaster in the 
+                        group, gaining recognition as a community leader. <br> 
+                        
+                        <br>
+
+                        Additionally, he created "Black Flame",
+                        an ongoing series of tournaments based on the
+                        Roblox Grand Melee, and one of the most important 
+                        tournaments on modern brickbattle... the Black Flame
+                        has now reached its sixth iteration in 2024. <br>
+                        
+                        <br>
+
+                        After the incident surrounding GFink's expulsion, 
+                        ownership of T.O.B. was granted to Koke, 
+                        due to his good leadership and ideas.
+
+                    </p>
+                </div>
+            </div>
+
+
+               <div class="Card BlackCardGallery">
+                <div class="header">
+                    <p> GALLERY </p>
+                </div>
+
+                <div class="body bodycolorpurple">
+                    <div class="ImageContainer purpleborder">
+
+                    <img class="myImg" src="../Brickbattlers/PYRO.webp" alt="Koke's alt account: PYRO." style="width: 100%; max-width: 300px;">
+                   
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+    </script>
+</body>
+</html>

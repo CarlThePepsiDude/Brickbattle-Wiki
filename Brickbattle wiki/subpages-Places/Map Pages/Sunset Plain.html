@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles.css"> 
+    <title>Brickbattle wiki</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+    
+    <div class="topnav">
+        <a href="../../index.html"> Home </a>
+        <a href="../../Brickbattlers.html"> Brickbattlers </a>
+        <a class="active" href="../../Places.html"> Places </a>
+        <a href="../Groups.html"> Groups </a>
+        <a href="../Events.html"> Events </a>
+        <a href="../Miscellaneous.html"> Miscellaneous </a>
+        <a href="../News.html"> News </a>
+        <a href="../Aboutthis.html"> About this </a>
+        <a href="../Credits.html"> Credits </a>
+    </div>
+    
+    
+    <div class="container main-grey">
+    
+        <div class="flex-box">
+            <div class="column-left-maps">
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p>Sunset Plain</p>
+                </div>
+
+                <div class="body bodycolorbrown">
+                    <div class="MapPicture brownborder">
+                        <img src="../../Maps/Sunset plains.png" class="Character-large" width="300px">
+                    </div>
+                   <p>
+                    <b>CREATED:</b> November 15, 2006.<br>
+                    <b>CREATOR:</b> Koopa. <br>
+                    <b>PERMISSION:</b> <span style="color: springgreen;"> UNCOPYLOCKED</span> <br>
+                    <b>STATUS:</b> <span style="color: springgreen;"> PUBLIC </span> - <span style="color: brown;"> BROKEN </span><br>
+                    <b>GAMEMODE:</b> Free For All.
+                    
+                    </p>
+                </div>
+
+                <div class="header">
+                    <p> TRIVIA </p>
+                </div>
+
+                <div class="body bodycolorbrown">
+                    <li>
+                        This is one of the first brickbattle games.
+                    </li>
+                    <br>
+                    <li>
+                        This map appeared in the 2006 ROBLOX trailer.
+                    </li>
+                    
+                </div>
+
+
+            </div>
+            </div>
+
+            <div class="column-right-maps">
+            <div class="Card BlackCard">
+
+
+                <div class="brickbattlerphrases BBbrown">
+                    <p><i>"Have fun at Sunset Plain! unfortunatly i could not get the regenerate 
+                        scripts to work in this map so nothing regenerates obviosly. You might have 
+                        already seen some of this map from the adventure awaits movie on the homepage 
+                        of roblox. So have fun here! P.S check out the waterfall!"</i></p>
+                    <p><b>- Schwaabo.</b></p>
+                </div>
+                <div class="header">
+                    <p> INTRODUCTION </p>
+                </div>
+
+                <div class="body bodycolorbrown">
+                   <p>  
+                   Sunset Plain is a brickbattle game made by Koopa, and hosted in his alt Schwaabo, it is one
+                   of the most remembered classic maps in ROBLOX, and has been featured in a post in the ROBLOX
+                   blog, as of today the game is broken, but can still played and its uncopylocked for the players
+                   to fix it themselves.
+                    <br>
+                   The game is now hosted in the ROBLOX account, its broken, and it has shut down, but it is uncopylocked.
+                </p>
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p> HISTORY </p>
+                </div>
+
+                <div class="body bodycolorbrown">
+                    <p> 
+                   Back in the early days of ROBLOX, Sunset Plains was made and even featured on the
+                   2006 ROBLOX trailer, since Koopa couldn't get the regen scripts to work, the map will
+                   not regenerate and will stay destroyes until everyone on the server leaves and a new
+                   one is created.
+                    
+                   <br>
+                   <br>
+
+                   This map contains two towers, one of them is a watchtower, a mountain, a waterfall with a cave behind it,
+                   a Dog swamp, and a castle in the center.
+                
+                   <br>
+                   <br>
+
+                   As of now, the map is public and can be played, but its broken, there are no weapons, and the only thing players can do
+                   is explore the map.
+                
+                    </p>
+                </div>
+            </div>
+
+            <div class="Card BlackCardGallery">
+                <div class="header">
+                    <p> GALLERY </p>
+                </div>
+
+                <div class="body bodycolorbrown">
+
+                    <div class="ImageContainer brownborder">
+
+                    <img class="myImg" src="../../Maps/Sunset Plain Doggies.png" alt="Doggies" style="width: 100%; max-width: 300px;">
+                   
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    </div>
+
+                    <div class="ImageContainer brownborder">
+
+                    <img class="myImg" src="../../Maps/Sunset Plain Roblox trailer.png" alt="Sunset Plain in the 2006 trailer" style="width: 100%; max-width: 300px;">
+                   
+                    </div>
+
+                    
+
+                    
+
+                    
+
+                     
+                    
+
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+
+        
+    </object>
+
+    </div>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+    </script>
+
+</body>
+</html>

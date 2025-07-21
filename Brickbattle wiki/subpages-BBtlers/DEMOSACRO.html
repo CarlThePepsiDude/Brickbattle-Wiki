@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> 
+    <title>Brickbattle wiki</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+    
+   <div class="topnav">
+        <a href="../index.html"> Home </a>
+        <a class="active" href="../Brickbattlers.html"> Brickbattlers </a>
+        <a href="../Places.html"> Places </a>
+        <a href="../Groups.html"> Groups </a>
+        <a href="../Events.html"> Events </a>
+        <a href="../Miscellaneous.html"> Miscellaneous </a>
+        <a href="../News.html"> News </a>
+        <a href="../Aboutthis.html"> About this </a>
+        <a href="../Credits.html"> Credits </a>
+    </div>
+    
+    <div class="container main-grey">
+    
+        <div class="flex-box">
+            <div class="column-left">
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p>DEMOSACRO</p>
+                </div>
+
+                <div class="body bodycolorgray">
+                    <div class="CharacterPicture grayborder">
+                        <img src="../Brickbattlers/DEMOSACRO.webp" class="Character-large" width="300px">
+                    </div>
+                   <p>
+                    <b>AKA:</b> Flamelther, DEMO, dh_1337. <br>
+                    <b>JOINED:</b> November 17th, 2014.<br>
+                    <b>OCCUPATIONS:</b>
+                    <ul>
+                        <li>Champion of multiple tournaments.</li>
+                        <li>Top-Brickbattler.</li>
+                    </ul>
+                    <b>RANK:</b> Legend. <br>
+                    <b>STATUS:</b> <span style="color: rgb(2, 234, 2);"> ACTIVE</span>
+                    
+                    </p>
+                </div>
+
+                <div class="header">
+                    <p> TRIVIA </p>
+                </div>
+
+                <div class="body bodycolorgray">
+                    <li>
+                        He is the only one who has defeated sockjoke96 in a 1v1 tournament.
+                    </li>
+                    <br>
+                    <li>
+                        He achieved a 100 winstreak in duels in May 2020.
+                    </li>
+                </div>
+
+
+            </div>
+            </div>
+
+            <div class="column-right">
+            <div class="Card BlackCard">
+
+
+                <div class="brickbattlerphrases BBgray">
+                    <p><i>"Im not planning on handing it down to any of you."</i></p>
+                    <p><b>- DEMOSACRO's statue in Outpost Demorack.</b></p>
+                </div>
+                <div class="header">
+                    <p> DESCRIPTION </p>
+                </div>
+
+                <div class="body bodycolorgray">
+                   <p>  
+                    Demo, or Flame, is a Top-Brickbattler that has won multiple brickbattle
+                    tournaments during his journey, the most known one being Black Flame 5.
+                </p>
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p> JOURNEY </p>
+                </div>
+
+                <div class="body bodycolorgray">
+                    <p> 
+                        DEMOSACRO joined the brickbattle community in 2018, he soon
+                        became and skilled brickbattler, winning tournaments like
+                        Black Flame 5, was the finalist of Black Flame 3 and 4, he 
+                        won GFink's 30k Robux tournament, along side Frostelther
+                        won the Sactun 2v2 Tournament, and currently he has won
+                        abraxas tournament (2025).
+                        <br>
+                        <br>
+                        He obtained the Master rank on September 28th 2019, and the
+                        title of grandmaster on January 15th 2021, later when Koke
+                        took TOB's leadership and ranks where rebranded, DEMOSACRO
+                        obtained the Legend rank.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Card BlackCardGallery">
+                <div class="header">
+                    <p> GALLERY </p>
+                </div>
+
+                <div class="body bodycolorwhite">
+
+                    <div class="ImageContainer whiteborder">
+
+                    <img class="myImg" src="../Pictures/DEMOSACRO statue.png" alt="Demo's statue in Brickbattle Arena" style="width: 100%; max-width: 300px;">
+                   
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    </div>
+
+
+                    
+
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+    </script>
+
+</body>
+</html>

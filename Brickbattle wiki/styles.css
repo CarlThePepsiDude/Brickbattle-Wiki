@@ -1,0 +1,524 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("./items/2013skybox.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    line-height: 1.5;
+    justify-content: center;
+    animation: moverFondo 30s linear infinite;
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    } 
+}
+
+
+
+/*========Navigation Bar======== */
+/* Adds a background to the navigation bar*/
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Style the links inside the navbar */
+.topnav a {
+    font-family: "Comic Sans MS";
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color when the mouse hovers */
+.topnav a:hover{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* Adds Color to the current link */
+.topnav a.active {
+    background-color: rgb(0, 53, 166);
+    color: white;
+}
+
+/*======= TEXT BOXES======= */
+
+.container {
+    margin: auto;
+    padding: 10px;
+}
+
+.CarlNotes {
+    margin: auto;
+    background-color: blue;
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+}
+
+.brickbattlerphrases {
+    margin: auto;
+    border: 2px solid white;
+    padding: 5px;
+    line-height: 0.8;
+}
+
+.BBpurple {background-color: purple;}
+.BBdarkblue {background-color: rgb(30, 54, 144);}
+.BBobscurered {background-color: rgb(61, 0, 0);}
+.BBwhite {background-color: #f2f2f2; color: #000000;}
+.BBgray {background-color: gray;}
+.BByellow {background-color: yellow; color: #000000;}
+.BBred {background-color: red;}
+.BBorange {background-color: rgb(255, 98, 0);}
+.BBstrongorange {background-color: rgb(255, 162, 0); color: #000000;}
+.BBweakblue {background-color: rgb(127, 192, 216); color: #000000;} 
+.BBbrown {background-color: brown;}
+.BBgreen {background-color: green;}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid white;
+    text-align: center;
+    width: 150px; 
+    text-decoration: none;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+ margin: 10px;
+ padding: 20px;
+ border: 2px solid white;
+ text-align: center;
+ width: 200px;
+ text-decoration: none;
+}
+
+.CharacterPicture { 
+ width: 290px;
+ max-width: 290px;
+ text-decoration: none;
+}
+
+.MapPicture {
+    margin: 20px;
+    padding: 30px;
+    width: 290px;
+    max-width: 290px;
+    text-decoration: none;
+}
+
+.ImageContainer{
+    margin: 10px;
+    padding: 9px;
+    text-align: center;
+    max-width: 190px;
+    flex-wrap: wrap;
+}
+
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+/*=======Border Colors======*/
+
+.whiteborder {border: 2px solid white;}
+.purpleborder {border: 2px solid purple;}
+.darkblueborder {border: 2px solid rgb(30, 54, 144);}
+.blueborder {border: 2px solid rgb(46, 46, 247);}
+.redborder {border: 2px solid red;}
+.greenborder {border: 2px solid green;}
+.yellowborder {border: 2px solid yellow;}
+.grayborder {border: 2px solid gray;}
+.orangeborder {border: 2px solid rgb(255, 98, 0);}
+.strongorangeborder {border: 2px solid rgb(255, 162, 0);}
+.weakblueborder {border: 2px solid rgb(127, 192, 216)}
+.brownborder {border: 2px solid brown;}
+
+
+
+
+
+.icon-box a{
+    text-decoration: none;
+    color: white;
+}
+.icon-box:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+.icon-large{
+    width: 150px;
+    height: 150px;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.flex-box-left, .flex-box-right{
+   width: 45%;
+   padding: 20px;
+   margin: 10px;
+}
+
+.Card{
+    max-width: 1023px;
+    margin-bottom: 2px;
+}
+
+.BlackCard .body{
+    width: inherit;
+    padding: 20px;
+    margin-bottom: 8px;
+    background: linear-gradient(rgb(15, 15, 15), rgb(15, 15, 15)), url(./items/standardBox_01_bkg.png) top repeat-x #f2f2f2;
+}
+
+
+.BlackCard .header{
+    height: 33px;
+    background-image: url(./items/tab_black_33h_t1.png);
+    background-repeat: no-repeat;
+    padding: 0 0px 0 5px;
+}
+
+.BlackCard .header p{
+    height: 33px;
+    background: url(./items/tab_black_33h_t2.png);
+
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+
+
+    line-height: 1.6;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.BlackCardGallery .body {
+    width: inherit;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(rgb(15, 15, 15), rgb(15, 15, 15)), url(./items/standardBox_01_bkg.png) top repeat-x #f2f2f2;
+    
+}
+
+.BlackCardGallery .header {
+    height: 33px;
+    background-image: url(./items/tab_black_33h_t1.png);
+    background-repeat: no-repeat;
+    padding: 0 0px 0 5px;
+}
+
+.BlackCardGallery .header p{
+    height: 33px;
+    background: url(./items/tab_black_33h_t2.png);
+
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+
+
+    line-height: 1.6;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.BlackCard-left .body {
+    width: inherit;
+    padding: 20px;
+    margin-bottom: 5px;
+    flex: 1;
+    background: linear-gradient(rgb(15, 15, 15), rgb(15, 15, 15)), url(./items/standardBox_01_bkg.png) top repeat-x #f2f2f2;
+    
+}
+
+.bodycolormain{border: 1px solid #aaaaaa;}
+.bodycolorpurple{border: 1px solid purple;}
+.bodycolordarkblue {border: 1px solid rgb(30, 54, 144);}
+.bodycolorblue {border: 2px solid rgb(46, 46, 247);}
+.bodycolorred {border: 2px solid red;}
+.bodycolorgreen {border: 2px solid green;}
+.bodycoloryellow {border: 2px solid yellow;}
+.bodycolorwhite {border: 2px solid #f2f2f2;}
+.bodycolorgray {border: 1px solid gray;}
+.bodycolororange {border: 1px solid rgb(255, 98, 0);}
+.bodycolorstrongorange {border: 1px solid rgb(255, 162, 0);}
+.bodycolorweakblue {border: 1px solid rgb(127, 192, 216);}
+.bodycolorbrown{border: 1px solid brown;}
+
+.BlackCard-left .header {
+    height: 33px;
+    background-image: url(./items/tab_black_33h_t1.png);
+    background-repeat: no-repeat;
+    padding: 0 0px 0 5px;
+}
+
+
+
+.BlackCard-left .header p{
+    height: 33px;
+    background: url(./items/tab_black_33h_t2.png);
+
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+
+
+    line-height: 1.6;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.BlackCard-right .body {
+    width: inherit;
+    padding: 10px;
+    flex: 1;
+    margin-bottom: 5px;;
+    background: linear-gradient(rgb(15, 15, 15), rgb(15, 15, 15)), url(./items/standardBox_01_bkg.png) top repeat-x #f2f2f2;
+    
+}
+
+.BlackCard-right .header {
+    height: 33px;
+    background-image: url(./items/tab_black_33h_t1.png);
+    background-repeat: no-repeat;
+    padding: 0 0px 0 5px;
+    
+}
+
+
+.BlackCard-right .header p{
+    height: 33px;
+    background: url(./items/tab_black_33h_t2.png);
+
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+
+
+    line-height: 1.6;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-left-maps {
+    display:flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.column-right-maps {
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+}
+.main-grey { background-color: rgba(15, 15, 15, 0.9);}
+.brown { background-color: rgba(101, 52, 34, 0.7); }
+.azulpastel { background-color: rgba(34, 52, 101, 0.7); }
+.green { background-color: rgba(34, 101, 52, 0.7); }
+.red { background-color: rgba(101, 34, 52, 0.7); }
+.darkpurple { background-color: rgba(44, 3, 66, 0.7); }
+.darkorange { background-color: rgba(186, 47, 0, 0.7); }
+.weakblue {background-color: rgba(127, 192, 216, 0.7);}
+
+/*======[TABS]======*/
+
+.tab {
+    overflow: hidden;
+    border: 1px solid white;
+    background-color: #000000;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #0453b3;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #02277c;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+/*======[for models]======*/
+
+model-viewer {
+    width: 100px;
+    height: 100px;
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+

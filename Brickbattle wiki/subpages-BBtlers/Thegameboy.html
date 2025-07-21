@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> 
+    <title>Brickbattle wiki</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+    
+      <div class="topnav">
+        <a href="../index.html"> Home </a>
+        <a class="active" href="../Brickbattlers.html"> Brickbattlers </a>
+        <a href="../Places.html"> Places </a>
+        <a href="../Groups.html"> Groups </a>
+        <a href="../Events.html"> Events </a>
+        <a href="../Miscellaneous.html"> Miscellaneous </a>
+        <a href="../News.html"> News </a>
+        <a href="../Aboutthis.html"> About this </a>
+        <a href="../Credits.html"> Credits </a>
+    </div>
+    
+    
+    <div class="container main-grey">
+    
+        <div class="flex-box">
+            <div class="column-left">
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p>Thegameboy</p>
+                </div>
+
+                <div class="body bodycolordarkblue">
+                    <div class="CharacterPicture darkblueborder">
+                        <img src="../Brickbattlers/Thegameboy.webp" class="Character-large" width="300px">
+                    </div>
+                   <p>
+                    <b>AKA:</b> N/A. <br>
+                    <b>JOINED:</b> April 30th, 2008.<br>
+                    <b>OCCUPATIONS:</b>
+                    <ul>
+                        <li>Veteran Brickbattler.</li>
+                        <li>Developer.</li>
+
+                    </ul>
+                    <b>RANK:</b> Not in TOB. <br>
+                    <b>STATUS:</b> <span style="color: rgb(125, 125, 125);"> INACTIVE</span>
+                    
+                    </p>
+                </div>
+
+                <div class="header">
+                    <p> TRIVIA </p>
+                </div>
+
+                <div class="body bodycolordarkblue">
+                    <li>
+                        Contributed massively to the Ultimate Toolset.
+                    </li>
+                    <br>
+                    <li>
+                        Developed Brickbattle Arena.
+                    </li>
+                    <br>
+                    <li>
+                        He is one of the users who most Contributed to the community.
+                    </li>
+                    <br>
+                    <li>
+                        Along with Koke he developed the new Colosseum.
+                    </li>
+                </div>
+
+
+            </div>
+            </div>
+
+            <div class="column-right">
+            <div class="Card BlackCard">
+
+
+                <div class="brickbattlerphrases BBdarkblue">
+                    <p><i>"To do"</i></p>
+                    <p><b>- -.</b></p>
+                </div>
+                <div class="header">
+                    <p> DESCRIPTION </p>
+                </div>
+
+                <div class="body bodycolordarkblue">
+                   <p>  
+                    Thegameboy is a former brickbattler who is known for his massive contributions
+                    to the community in developing games and scripts. He developed most of
+                    the Colosseum, and along with koke later created the New Colosseum, He also
+                    was a major contributor in the Ultimate Toolset.
+                    <br>
+                    He is no longer active in the community, apparently due to toxicity, but he
+                    is remembered as one of the biggest developers in the community.
+                </p>
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p> JOURNEY </p>
+                </div>
+
+                <div class="body bodycolordarkblue">
+                    <p> 
+                        Gameboy joined the community trought Doomspire Brickbattle
+                        recently after the events of the Newgens vs Veterans War in 2019.
+                        He then would begin working on projects like his own toolset
+                        and a Colosseum, which worked for duels, and worked for
+                        for Black Flame duels.
+                        
+                        Later he would develop The new Colosseum along side koke, which
+                        also served for Black flame tournaments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Card BlackCardGallery">
+                <div class="header">
+                    <p> GALLERY </p>
+                </div>
+
+                <div class="body bodycolordarkblue">
+
+                    <div class="ImageContainer darkblueborder">
+
+                    <img class="myImg" src="" alt="In need of pictures!!" style="width: 100%; max-width: 300px;">
+                   
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    </div>
+
+
+                    
+
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Brickbattle wiki</title>
+</head>
+<body>
+    
+    
+    <div class="topnav">
+        <a href="./index.html"> Home </a>
+        <a href="./Brickbattlers.html"> Brickbattlers </a>
+        <a class="active" href="./Places.html"> Places </a>
+        <a href="./Groups.html"> Groups </a>
+        <a href="./Events.html"> Events </a>
+        <a href="./Miscellaneous.html"> Miscellaneous </a>
+        <a href="./News.html"> News </a>
+        <a href="./Aboutthis.html"> About this </a>
+        <a href="./Credits.html"> Credits </a>
+    </div>
+    
+    
+    <div class="container main-grey">
+
+    <h1> Maps </h1>
+    <p> stand-alone experiences that hold only a map, and the toolset, these maps can have its own
+        game system but it mostly is an infinite ffa, team, or ctf game where people goes to practice,
+        pass the time and meet new people while also fighting, these where the first iterations of brickbattle
+        games during the early years of roblox.
+    </p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Classics')">Classics</button>
+        <button class="tablinks" onclick="openCity(event, 'Modern')">Modern</button>
+    </div>
+
+    <div id="Classics" class="tabcontent">
+        <h3>Classic Maps</h3>
+        <p>
+            Maps that have been in ROBLOX since its creation, those maps come at every player's mind
+            when someone says "Brickbattle Maps".
+        </p>
+         <div class="icon-container">
+
+            <div class="icon-box main-grey"> 
+                <a href="./subpages-Places/Map Pages/Crossroads.html">
+                <img src="./Maps/Crossroads.webp" class="icon-large">  
+                <br>
+                Crossroads
+            </a>
+            </div>
+
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Chaos Canyon.html"> 
+                <img src="./Maps/Chaos Canyon 1.jpg" class="icon-large">
+                Chaos Canyon
+                </a>
+             </div>
+
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Rocket Arena.html"> 
+                <img src="./Maps/rocket arena.webp" class="icon-large">
+                Rocket Arena
+                </a>
+            </div>
+            
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Glass Houses.html"> 
+                <img src="./Maps/Glass Houses.webp" class="icon-large">
+                <br>
+                Glass Houses
+                </a> 
+            </div>
+
+             <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Santa's Winter Stronghold.html"> 
+                <img src="./Maps/Santa's Winter Stronghold.png" class="icon-large">
+                <br>
+                Santa's Winter Stronghold
+                </a> 
+            </div>
+
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Sunset Plain.html"> 
+                <img src="./Maps/Sunset plains.png" class="icon-large">
+                <br>
+                Sunset Plain
+                </a> 
+            </div>
+
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Roblox HQ.html"> 
+                <img src="./Maps/Roblox HQ.webp" class="icon-large">
+                <br>
+                Roblox HQ
+                </a> 
+            </div>
+
+           
+            
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Haunted Mansion.html"> 
+                <img src="./Maps/Haunted Mansion.png" class="icon-large">
+                <br>
+                Haunted Mansion
+                </a> 
+            </div>
+
+
+
+        
+
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Grand Melee Arena.html"> 
+                <img src="./Maps/GrandMelee.png" class="icon-large">
+                <br>
+                Grand Melee Arena
+                </a> 
+            </div>
+
+            <div class="icon-box main-grey">
+                <a href="./subpages-Places/Map Pages/Balance.html"> 
+                <img src="./Maps/Balance.png" class="icon-large">
+                <br>
+                Balance
+                </a> 
+            </div>
+    </div>
+    </div>
+
+    <div id="Modern" class="tabcontent">
+        <h3>Modern Maps</h3>
+    </div>
+
+
+    </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>

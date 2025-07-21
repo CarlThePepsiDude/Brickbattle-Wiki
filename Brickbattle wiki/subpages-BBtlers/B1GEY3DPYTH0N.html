@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> 
+    <title>Brickbattle wiki</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+    
+       <div class="topnav">
+        <a href="../index.html"> Home </a>
+        <a class="active" href="../Brickbattlers.html"> Brickbattlers </a>
+        <a href="../Places.html"> Places </a>
+        <a href="../Groups.html"> Groups </a>
+        <a href="../Events.html"> Events </a>
+        <a href="../Miscellaneous.html"> Miscellaneous </a>
+        <a href="../News.html"> News </a>
+        <a href="../Aboutthis.html"> About this </a>
+        <a href="../Credits.html"> Credits </a>
+    </div>
+    
+    
+    <div class="container main-grey">
+    
+        <div class="flex-box">
+            <div class="column-left">
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p>B1GEY3DPYTH0N</p>
+                </div>
+
+                <div class="body bodycolorred">
+                    <div class="CharacterPicture redborder">
+                        <img src="../Brickbattlers/uberman360.webp" class="Character-large" width="300px">
+                    </div>
+                   <p>
+                    <b>AKA:</b> N/A. <br>
+                    <b>JOINED:</b> November 16th, 2014.<br>
+                    <b>OCCUPATIONS:</b>
+                    <ul>
+                        <li>Veteran Brickbattler.</li>
+
+                    </ul>
+                    <b>RANK:</b> Alchemist. <br>
+                    <b>STATUS:</b> <span style="color:lime;"> BARELY ACTIVE</span>
+                    
+                    </p>
+                </div>
+
+                <div class="header">
+                    <p> TRIVIA </p>
+                </div>
+
+                <div class="body bodycolorred">
+                    <li>
+                        He currently owns a killstreak of 301 KOs.
+                    </li>
+                    <br>
+                </div>
+
+
+            </div>
+            </div>
+
+            <div class="column-right">
+            <div class="Card BlackCard">
+
+
+                <div class="brickbattlerphrases BBred">
+                    <p><i>"Peace is paved with kingdom saved."</i></p>
+                    <p><b>- B1GEY3DPYTH0N.</b></p>
+                </div>
+                <div class="header">
+                    <p> DESCRIPTION </p>
+                </div>
+
+                <div class="body bodycolorred">
+                   <p>  
+                    B1GEY3DPYTH0N is an admin in Temple Of Brickbattle, he is mostly known for
+                </p>
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="Card BlackCard">
+                <div class="header">
+                    <p> JOURNEY </p>
+                </div>
+
+                <div class="body bodycolorred">
+                    <p> 
+                        To Do.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Card BlackCardGallery">
+                <div class="header">
+                    <p> GALLERY </p>
+                </div>
+
+                <div class="body bodycolorred">
+
+                    <div class="ImageContainer redborder">
+
+                    <img class="myImg" src="" alt="In need of pictures!!" style="width: 100%; max-width: 300px;">
+                   
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    </div>
+
+
+                    
+
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+    </script>
+
+</body>
+</html>
